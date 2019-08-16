@@ -1,0 +1,430 @@
+body {
+    height:40vw;
+    background: #FEB825;
+    font-family: 'Teko', sans-serif;
+    /* color: #a0e281; */
+}
+
+h1 {
+    font-size: 24pt;
+    letter-spacing: 0.1em;
+    position: sticky;
+    z-index: 30;
+}
+
+#jakeBase {
+    margin: auto;
+    width: 86vw;   
+    display: block;
+    position: relative;
+    top: 18vw;
+    z-index: 10;
+}
+
+#eyes {
+    margin: auto;
+    width: 60vw;
+    display: block;
+    position:relative;
+    top: -19vw;
+    z-index: 9;
+}
+
+#eyes:hover {
+    width: 62vw;
+}
+
+#nose {
+    margin: auto;
+    width: 12vw;
+    display: block;
+    position:relative;
+    top: -28vw;
+    z-index: 20;
+}
+
+#nose:hover {
+    top: -29vw;
+}
+
+h2 {
+    font-size: 36pt;
+    letter-spacing: 4vw;
+    text-align: center;
+    display: block;
+    position:relative;
+    bottom: 16vw;
+    color: white;
+}
+
+.torso, .info, .controlPanel, .stretchTorso, .lava {
+    display: none;
+}
+
+h3 {
+    font-family: 'Aladin', cursive;
+    font-style: bold;
+    font-size: 40pt;
+    letter-spacing: 0.2em;  
+    position: relative;
+}
+
+h6 {
+    font-size: 36pt;
+    letter-spacing: 0.1em;
+    color: white;
+}
+
+p {
+    font-size: 16pt;
+}
+
+
+
+
+
+
+@media screen and (max-width:1400px) {
+
+    body {
+        background-color: #37A693;
+    }
+
+    .interface {
+        display: none;
+    }
+
+    .torso {
+        display: inline-block;
+        background: #FEB825;
+        width: 40vw;
+        height:54vw;
+        border: 2px black solid;
+        border-radius: 5vw;
+        margin-left: 10vw;
+        margin-right: 7vw;
+        z-index: 20; 
+        position: relative;
+        top: 60px;
+    }
+
+    #adVid {
+        display: block;
+        margin: auto;
+        border: 4px black solid;
+        border-radius: 2vw;
+        width:33vw;
+        height:22vw;
+        position: relative;
+        top: 3vw;
+    }
+
+    #jakeBeemo {
+        display: block;
+        margin: auto;
+        width: 30vw;
+        position: relative;
+        top: 5vw;
+    }
+
+    .info {
+        display: block;
+        width: 30vw;
+        height: 20vw;
+        position: relative;
+        top: -30vw;
+        left: 56vw;
+        overflow: scroll;
+        background-color: #D0E5D3;
+        padding: 2vw;
+        border-radius: 2vw;
+    }
+
+    a {
+        color: #FEB825;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    #stretch:hover {
+        letter-spacing: 0.2em;
+    }
+
+    svg circle:hover {
+        fill: #FEE341;
+    }
+
+    h5, label {
+        font-size: 24pt;
+        letter-spacing: 8pt;
+        color: #FEE341;
+    }
+
+    .controlPanel {
+        display: block;
+        position: fixed;
+        top: 4vw;
+        right: 12vw;
+        width: 30vw;
+        z-index:40;
+    }
+
+    #on {
+        background-color: #d42f33; 
+        border: 4px solid #15161a;
+        color: white;
+        padding: 5px 32px;
+        margin-right: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    #off {
+        background-color: #a4d081; 
+        border: 4px solid #15161a;
+        color: white;
+        padding: 5px 32px;
+        margin: 0px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    #nonono {
+        display: none;
+    }
+
+
+    #panel {
+        display: inline-block;
+        position: relative;
+        top: -28vw;
+    }
+    
+}
+
+
+@media screen and (max-width:1024px) {
+
+    body {
+        background: #a1dfeb;
+    }
+
+    .beemo, .info {
+        display: none;
+    }
+
+    .torso {
+        display: none;
+    }
+
+    #jakeFace{
+        display: block;
+        width: 30vw;
+        position: relative;
+        top: 5vw;
+        right: -35vw;
+    }
+
+    .stretchTorso {
+        display: block;
+        background: #FEB825;
+        border: 2px black solid;
+        width: 70vw;
+        height:30vw;
+        border-radius: 8vw;
+        margin: auto;
+        position: relative;
+        top: 40vw;
+        z-index: 20; 
+        overflow: hidden;
+    }
+
+    .stretchTorso:hover {
+        width: 300vw;
+        height: 340vw;
+        border-radius: 55vw;
+        transition: ease;
+        transition-duration: 5s;
+    }
+
+    #adAud {
+        display: block;
+        position: relative;
+        top: 26vw;
+        left: 90vw;
+    }
+
+    #lady {
+        display: block;
+        position: relative;
+        top: 40vw;
+        left: 20vw;
+        width: 140vw;
+    }
+
+    #house{
+        height: 220vw;
+        position: relative;
+        top: 60vw;
+        left: 20vw;
+    }
+
+    #hint {
+        display: inline-block;
+        top: -2vw;
+        left: 6vw;
+        color: white;
+    }
+
+    #finn {
+        height: 40vw;
+        position: relative;
+        left: 3vw;
+    }
+
+    .controlPanel {
+        left: 15vw;
+    }
+
+    #on {
+        background-color: #FEE341; 
+        border: none;
+        color: white;
+        padding: 5px 32px;
+        margin-right: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    #off {
+        background-color: #FEE341; 
+        border: none;
+        color: white;
+        padding: 5px 32px;
+        margin: 0px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+}
+
+
+@media screen and (max-width:750px) {
+
+    body {
+        background: linear-gradient(#B3B4FD, #6c256f);
+        /* background: #B3B4FD; */
+        height: 500vw;
+    }
+
+    .stretchTorso {
+        display: none;
+    }
+
+    .controlPanel {
+        right: 5vw;
+        width: 80vw;
+    }
+
+    .controlPanel h5 {
+        font-size: 16pt;
+        letter-spacing: 1.5vw;
+        transform: rotate(90deg) translateX(40vw) translateY(-40vw);
+    }
+
+    #on, #off {
+        display: none;
+    }
+
+    #nonono {
+        background-color: transparent; 
+        border: #FEE341 2px solid;
+        color: #fcfcf8;
+        padding: 4px 10vw;
+        transform: rotate(90deg) translateX(82vw) translateY(-62vw);
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 12px;
+        letter-spacing: 0.4em;
+    }
+
+
+    .torso {
+        display: block;
+        background: #FEB825;
+        border: 2px black solid;
+        width: 60vw;
+        height:40vw;
+        border-radius: 15vh;
+        margin-left: 14vw;
+        position: relative;
+        top: 14vw;
+        z-index: 20; 
+    }
+    
+    #jakeFace{
+        display: block;
+        width: 30vw;
+        position: relative;
+        top: 5vw;
+        left: 10vw;
+    }
+
+    .lava {
+        display: block;
+        text-align: center;
+    }
+
+    #leg1 {
+        display: block;
+        width:56vw;
+        padding-left: 10vw;
+        position: relative;
+        top: -40vw;
+        left: 18vw;
+    }
+
+
+    #lava1 {
+        width: 80vw;
+        position: relative;
+        left: -40vw;
+        top: -42vh;
+        z-index: -9;
+    }
+
+    #floor {
+        color: #ff8433;
+        top: -45vw;
+        left: 5vw;
+        z-index: -5;
+    }
+
+    #lava {
+        font-size: 118pt;
+    }
+
+    #lava2 {
+        width: 100vw;
+        position: relative;
+        left:1vw;
+        top: -27vh;
+    }
+
+    #warn {
+        color: #FEE341;
+        position: relative;
+        z-index: 40;
+        top: -18vw;
+    }
+}
+

@@ -26,7 +26,7 @@ $(document).ready (function () {
 
     $("#on").click(function(){
         if ($(window).width() <= 1200 && $(window).width() >= 1024){
-            $("body").css('background-image', 'url(/assets/knifeRain.gif)');
+            $("body").css('background-image', 'url(assets/knifeRain.gif)');
             $("#panel").html("KEEP SQUEEZING");
         } else {
             if ($(window).width() < 1024 && $(window).width() > 750){
@@ -55,8 +55,15 @@ $(document).ready (function () {
     })
 
 
+    // gradient();
 
+    // function gradient() {
+    //     if ($(window).width() <= 750){
+    //         // $("body").css('background-image', 'url(/assets/knifeRain.gif)');
 
+    //         // $("body").css("-webkit-gradient(linear, from(#B3B4FD), to(#6c256f))");
+    //     }
+    // }
 
 
 

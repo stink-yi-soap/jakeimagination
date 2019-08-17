@@ -1,7 +1,7 @@
 $(document).ready (function () {
 
     $("#nose").click(function(){
-        $("#instruction").html("SQUEEZE ME");
+        $("#instruction").html("SQUEEZE HORIZONTALLY");
     })
 
     $("#redButton").mouseover(function(){
@@ -25,7 +25,7 @@ $(document).ready (function () {
     
 
     $("#on").click(function(){
-        if ($(window).width() <= 1200 && $(window).width() >= 1024){
+        if ($(window).width() <= 1400 && $(window).width() >= 1024){
             $("body").css('background-image', 'url(/assets/knifeRain.gif)');
             $("#panel").html("KEEP SQUEEZING");
         } else {
@@ -37,7 +37,7 @@ $(document).ready (function () {
     })
 
     $("#off").click(function(){
-        if ($(window).width() <= 1200 && $(window).width() >= 1024){
+        if ($(window).width() <= 1400 && $(window).width() >= 1024){
             $("body").css('background-image', 'none');
             $("#panel").html(" ");
         } else {

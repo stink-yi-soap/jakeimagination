@@ -84,7 +84,7 @@ p {
 
 
 
-@media screen and (max-width:1400px) {
+@media screen and (max-width:1200px) {
 
     body {
         background-color: #37A693;
@@ -321,7 +321,6 @@ p {
 
     body {
         background: linear-gradient(#B3B4FD, #6c256f);
-        /* background: #B3B4FD; */
         height: 500vw;
     }
 

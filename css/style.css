@@ -49,7 +49,7 @@ h1 {
 
 h2 {
     font-size: 36pt;
-    letter-spacing: 4vw;
+    letter-spacing: 2vw;
     text-align: center;
     display: block;
     position:relative;
@@ -428,3 +428,59 @@ p {
     }
 }
 
+
+@media screen and (max-width:414px) {
+
+    .controlPanel h5 {
+        transform: rotate(90deg) translateX(40vw) translateY(-34vw); 
+        width: 100vw;
+    }
+
+    #nonono {
+        transform: rotate(90deg) translateX(120vw) translateY(-64vw);
+    }
+
+
+    #leg1 {
+        top: -50vw;
+        left: 10vw;
+    }
+
+    .torso {
+        border: 1px black solid;
+
+    }
+
+    #lava1 {
+        width: 80vw;
+        position: relative;
+        left: -40vw;
+        top: -38vh;
+        z-index: -9;
+    }
+
+    #floor {
+        font-size: 30pt;
+        top: -50vw;
+    }
+
+    #lava {
+        font-size: 108pt;
+    }
+
+    #lava2 {
+        width: 100vw;
+        position: relative;
+        left: 4vw;
+        top: -27vh;
+    }
+
+    #warn {
+        color: #FEE341;
+        position: relative;
+        z-index: 40;
+        top: -18vw;
+    }
+
+
+}

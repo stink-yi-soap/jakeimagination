@@ -1,7 +1,10 @@
 body {
     height:100vh;
     background: #FEB825;
-    font-family: 'Teko', sans-serif;
+    font-family: wigwag-bold,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: 'Teko', sans-serif; */
     overflow: hidden;
     /* color: #a0e281; */
 }
@@ -57,7 +60,7 @@ h1 {
 
 h2 {
     font-size: 36pt;
-    letter-spacing: 2vw;
+    letter-spacing: 1vw;
     text-align: center;
     display: block;
     position:relative;
@@ -70,21 +73,25 @@ h2 {
 }
 
 h3 {
-    font-family: 'Aladin', cursive;
-    font-style: bold;
+    font-family: wigwag-deluxe, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 40pt;
     letter-spacing: 0.2em;  
     position: relative;
 }
 
 h6 {
-    font-size: 36pt;
+    font-size: 28pt;
     letter-spacing: 0.1em;
     color: white;
 }
 
 p {
     font-size: 16pt;
+    font-family: bebas-neue-pro,sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
 
 .intro {
@@ -132,7 +139,7 @@ p {
     #jakeBeemo {
         display: block;
         margin: auto;
-        width: 30vw;
+        width: 34vw;
         position: relative;
         top: 5vw;
     }
@@ -157,8 +164,13 @@ p {
         font-weight: bold;
     }
 
+    #stretch {        
+        color:#e61e21;
+    }
+
     #stretch:hover {
         letter-spacing: 0.2em;
+        color: #FEB825;
     }
 
     svg circle:hover {
@@ -167,7 +179,7 @@ p {
 
     h5, label {
         font-size: 24pt;
-        letter-spacing: 8pt;
+        letter-spacing: 4pt;
         color: #FEE341;
     }
 
@@ -190,6 +202,9 @@ p {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        font-family: wigwag-bold, sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
     #off {
@@ -202,6 +217,9 @@ p {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        font-family: wigwag-bold, sans-serif;
+        font-weight: 400;
+        font-style: normal;
     }
 
     #nonono {

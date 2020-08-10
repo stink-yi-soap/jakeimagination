@@ -417,6 +417,10 @@ p {
         z-index: 40;
         top: -18vw;
     }
+
+    .intro {
+        display: none;
+    }
 }
 
 

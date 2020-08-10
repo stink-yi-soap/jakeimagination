@@ -1,7 +1,8 @@
 body {
-    height:40vw;
+    height:100vh;
     background: #FEB825;
     font-family: 'Teko', sans-serif;
+    overflow: hidden;
     /* color: #a0e281; */
 }
 
@@ -34,6 +35,12 @@ h1 {
     width: 62vw;
 }
 
+@keyframes move {
+    0%   {top: -28vw;}
+    50%  {top: -29vw;}
+    100% {top: -28vw;}
+  }
+
 #nose {
     margin: auto;
     width: 12vw;
@@ -41,6 +48,7 @@ h1 {
     position:relative;
     top: -28vw;
     z-index: 20;
+    animation: move 1.2s infinite;
 }
 
 #nose:hover {
@@ -79,7 +87,9 @@ p {
     font-size: 16pt;
 }
 
-
+.intro {
+    display: none;
+}
 
 
 
@@ -134,11 +144,12 @@ p {
         position: relative;
         top: -30vw;
         left: 56vw;
-        overflow: scroll;
+        overflow: auto;
         background-color: #D0E5D3;
         padding: 2vw;
         border-radius: 2vw;
     }
+
 
     a {
         color: #FEB825;
@@ -211,6 +222,7 @@ p {
 
     body {
         background: #a1dfeb;
+        overflow: auto;
     }
 
     .beemo, .info {
@@ -320,9 +332,8 @@ p {
 @media screen and (max-width:750px) {
 
     body {
-        background: linear-gradient(#B3B4FD, #6c256f);
         background-color: #6c256f;
-        height: 500vw;
+        height: 400vw;
     }
 
     .stretchTorso {
@@ -330,33 +341,13 @@ p {
     }
 
     .controlPanel {
-        right: 5vw;
-        width: 80vw;
+        display: none;
     }
 
-    .controlPanel h5 {
-        font-size: 16pt;
-        letter-spacing: 1.5vw;
-        transform: rotate(90deg) translateX(40vw) translateY(-40vw);
-    }
 
     #on, #off {
         display: none;
     }
-
-    #nonono {
-        background-color: transparent; 
-        border: #FEE341 2px solid;
-        color: #fcfcf8;
-        padding: 4px 10vw;
-        transform: rotate(90deg) translateX(82vw) translateY(-62vw);
-        text-align: center;
-        text-decoration: none;
-        display: block;
-        font-size: 12px;
-        letter-spacing: 0.4em;
-    }
-
 
     .torso {
         display: block;
@@ -431,56 +422,29 @@ p {
 
 @media screen and (max-width:414px) {
 
-    .controlPanel h5 {
-        transform: rotate(90deg) translateX(40vw) translateY(-34vw); 
+    body {
+        height: 100vh;
+        overflow: hidden;
+        background-color: #B3B4FD;
+
+    }
+
+    #container {
+        display: none;
+    }
+
+    .intro {
+        display: initial;
+        height: 100vh;
         width: 100vw;
     }
 
-    #nonono {
-        transform: rotate(90deg) translateX(120vw) translateY(-64vw);
+
+    h5 {
+        top: 20vh;
+        left: 5vw;
+        position: absolute;
+        letter-spacing: 0em;
     }
-
-
-    #leg1 {
-        top: -50vw;
-        left: 10vw;
-    }
-
-    .torso {
-        border: 1px black solid;
-
-    }
-
-    #lava1 {
-        width: 80vw;
-        position: relative;
-        left: -40vw;
-        top: -38vh;
-        z-index: -9;
-    }
-
-    #floor {
-        font-size: 30pt;
-        top: -50vw;
-    }
-
-    #lava {
-        font-size: 108pt;
-    }
-
-    #lava2 {
-        width: 100vw;
-        position: relative;
-        left: 4vw;
-        top: -27vh;
-    }
-
-    #warn {
-        color: #FEE341;
-        position: relative;
-        z-index: 40;
-        top: -18vw;
-    }
-
 
 }

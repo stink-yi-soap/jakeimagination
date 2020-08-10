@@ -1,7 +1,7 @@
 $(document).ready (function () {
 
     $("#nose").click(function(){
-        $("#instruction").html("SQUEEZE THE WINDOW THINNER");
+        $("#instruction").html("SQUEEZE THE BROWSER WINDOW");
     })
 
     $("#redButton").mouseover(function(){

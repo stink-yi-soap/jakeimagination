@@ -43,8 +43,6 @@ $(document).ready (function () {
             $("#panel").html("");
         } else if ($(window).width() <= 750) {
             $("body").css('background-image', 'initial');
-            $("#controlPanelText").html('Hello World');
-
         } 
     });
 

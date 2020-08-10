@@ -1,3 +1,3 @@
 # jakeimagination
 
-This is a responsive web project for DT Bootcamp 2019.
+This is a responsive web project for Parsons DT Bootcamp 2019.
